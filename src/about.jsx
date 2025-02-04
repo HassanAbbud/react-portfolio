@@ -19,6 +19,9 @@ export default function About() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   Hassan Sharif Abbud Gonzalez
                 </h2>
+                <h3>
+                Software engineer | Web developer | Game developer
+                </h3>
                 <p className="text-gray-600 mb-6">
                   Former entrepreneur in the high impact business incubator
                   program NOVA ORION and graduate of the Instituto Tecnológico y
