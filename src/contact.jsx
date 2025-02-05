@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaItchIo, FaLinkedin, FaPhone } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,7 +18,9 @@ export default function Contact() {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Add form submission logic here
+    navigate('/');
   };
+
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
