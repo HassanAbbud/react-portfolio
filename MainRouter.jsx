@@ -6,7 +6,7 @@ import Home from "./src/components/Home";
 import About from "./src/about";
 import Contact from "./src/contact";
 import Project from "./src/project";
-import Education from "./src/education";
+import Services from "./src/services";
 import Layout from "./src/components/Layout";
 
 const MainRouter = () => {
@@ -17,7 +17,7 @@ const MainRouter = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/project" element={<Project />} />
-          <Route exact path="/education" element={<Education />} />
+          <Route exact path="/services" element={<Services />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
