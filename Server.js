@@ -1,8 +1,8 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const app = require('./server/app');
-const connectDB = require('./server/config/db.config');
+import express from'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import app from './server/app.js';
+import connectDB from './server/config/config.js'; //change to devConfig with your mongo database URL
 
 const server = express();
 
@@ -11,7 +11,6 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
 connectDB();
-
 
 server.use('/', app);
 
